@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nargileler - BİZZ CAFE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-menu">
+    <div class="baslik">Nargileler</div>
+
+    <div class="button-container">
+        <button onclick="navigateTo('index.html')">Anasayfa</button>
+        <button onclick="navigateTo('reservation.html')">Rezervasyon</button>
+        <button onclick="navigateTo('about.html')">Hakkımızda</button>
+    </div>
+    
+    <div class="menu-item2">
+        <img src="resimler/nargile.jpg" alt="Naneli Nargile ">
+        <h2>Naneli Nargile </h2>
+        <p>Naneli Nargile, ferahlatıcı nane aroması ile harmanlanmış tütünün, keyifli bir duman deneyimi sunduğu bir nargile çeşididir. Her nefeste taze nane tadını hissedebilir ve serinletici etkisiyle rahatlayabilirsiniz. Özellikle sıcak yaz günlerinde tercih edilen bu lezzet, nargile keyfini doruklara taşır</p>
+        <h3>300 ₺</h3>
+    </div>
+    
+    <div class="menu-item2">
+        <img src="resimler/nargile.jpg" alt="Karpuzlu Nargile ">
+        <h2>Karpuzlu Nargile </h2>
+        <p>Karpuzlu Nargile, tatlı ve sulu karpuz aromasının tütünle buluştuğu, serinletici ve ferahlatıcı bir nargile çeşididir. Her nefeste yaz mevsiminin vazgeçilmez meyvesi olan karpuzun doğal ve hoş tadını hissedebilirsiniz. Bu özel lezzet, nargile keyfinize taze bir dokunuş katacak.</p>
+        <h3>300 ₺</h3>
+    </div>
+    
+    
+
+   
+
+    <script>
+        function navigateTo(url) {
+            document.body.classList.add('body-slide-out');
+            setTimeout(function() {
+                window.location.href = url;
+            }, 500);
+        }
+    </script>
+</body>
+</html>

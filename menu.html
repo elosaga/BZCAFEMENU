@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menü - BİZZ CAFE</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="body-menu">
+        <h1 class="baslik">BİZZ CAFE MENÜ</h1>
+        
+        <div class="button-container">
+            <button onclick="navigateTo('index.html')">Ana Sayfa</button>
+            <button onclick="navigateTo('menu.html')">Menü</button>
+            <button onclick="navigateTo('reservation.html')">Rezervasyon</button>
+            <button onclick="navigateTo('about.html')">Hakkımızda</button>
+        </div>
+        <p class="p2">Lezzetli Yemekler / İçecekler / Nargileler</p>
+        <div class="menu-button-container">
+            <button onclick="navigateTo('yemekler.html')">Yemekler</button>
+            <button onclick="navigateTo('Atıştırmalıklar.html')">Atıştırmalıklar</button>
+            <button onclick="navigateTo('İçecekler.html')">İçecekler</button>
+            <button onclick="navigateTo('Nargileler.html')">Nargileler</button>
+        </div>
+        <script>
+            function navigateTo(url) {
+                
+                document.body.classList.add('body-slide-out');
+                
+                setTimeout(function() {
+                    window.location.href = url;
+                }, 500); 
+            }
+        </script>
+</body>
+</html>        

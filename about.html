@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - BİZZ CAFE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body class="body-about">
+    <div class="baslik">Hakkımızda</div>
+    
+    <div class="content">
+        <p>BİZZ CAFE, adanın en iyi nargile cafesi olarak hizmet vermektedir. Sizlere en kaliteli nargile ve içecek seçeneklerini sunmaktan gurur duyuyoruz. Müşteri memnuniyeti bizim için her zaman ön plandadır. Mekanımızda geçirdiğiniz her anın keyifli ve unutulmaz olması için çalışıyoruz.</p>
+
+    </div>
+
+    <div class="button-container">
+        <button onclick="navigateTo('index.html')">Anasayfa</button>
+        <button onclick="navigateTo('menu.html')">Menü</button>
+        <button onclick="navigateTo('reservation.html')">Rezervasyon</button>
+    </div>
+    
+    <div class="slider">
+        <div><img src="resimler/mekan1.jpg" alt="Mekan 1"></div>
+        <div><img src="resimler/mekan2.jpg" alt="Mekan 2"></div>
+        <div><img src="resimler/mekan3.jpg" alt="Mekan 3"></div>
+        
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 8000,
+                arrows: true,
+                dots: true
+            });
+        });
+
+        function navigateTo(url) {
+            document.body.classList.add('body-slide-out');
+            setTimeout(function() {
+                window.location.href = url;
+            }, 500);
+        }
+    </script>
+</body>
+</html>

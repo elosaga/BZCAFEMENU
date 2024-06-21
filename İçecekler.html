@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İçecekler - BİZZ CAFE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-menu">
+    <div class="baslik">İçecekler</div>
+
+    <div class="button-container">
+        <button onclick="navigateTo('index.html')">Anasayfa</button>
+        <button onclick="navigateTo('menu.html')">Menü</button>
+        <button onclick="navigateTo('reservation.html')">Rezervasyon</button>
+        <button onclick="navigateTo('about.html')">Hakkımızda</button>
+    </div>
+    
+    <div class="menu-item1">
+        <img src="resimler/kola.jpg" alt="kola">
+        <h2>Kola</h2>
+        <h2>30 ₺</h2>
+    </div>
+    
+    <div class="menu-item1">
+        <img src="resimler/Limonata.jpg" alt="limonata">
+        <h2>limonata</h2>
+        <h2>70 ₺</h2>
+        
+    </div>
+    
+    <div class="menu-item1">
+        <img src="resimler/çikolatamilk.jpg" alt="çikolatalı milkshake">
+        <h2>milkshake</h2>
+        <h2>120 ₺</h2>
+       
+    </div>
+
+    
+
+    
+
+    <script>
+        function navigateTo(url) {
+            document.body.classList.add('body-slide-out');
+            setTimeout(function() {
+                window.location.href = url;
+            }, 500);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atıştırmalıklar - BİZZ CAFE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-menu">
+    <div class="baslik">ATIŞTIRMALIKLAR</div>
+
+    <div class="button-container">
+       
+        <button onclick="navigateTo('index.html')">Anasayfa</button>
+        <button onclick="navigateTo('menu.html')">Menü</button>
+        <button onclick="navigateTo('reservation.html')">Rezervasyon</button>
+        <button onclick="navigateTo('about.html')">Hakkımızda</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="resimler/combo_box.jpg" alt="combo_box">
+        <h2 class="h2">COMBO BOX</h2>
+        <p>çıtır tavuk kanatları, patates kızartması, soğan halkaları ve seçeneklere göre dip soslar bulunur. </p>
+        <h2 class="h3">250 ₺</h2>
+        
+    </div>
+    
+    <div class="menu-item">
+        <img src="resimler/patate_kızartması.jpg" alt="patate_kızartması">
+        <h2 class="h2">Patates Kızartması</h2>
+        <p>taze patateslerden altın sarısı renkte kızartılmış, dışı çıtır içi yumuşak ve lezzetli atıştırmalık</p>
+        <h2 class="h3">250 ₺</h2>
+        
+    </div>
+    
+    
+
+   
+
+    <script>
+        function navigateTo(url) {
+            document.body.classList.add('body-slide-out');
+            setTimeout(function() {
+                window.location.href = url;
+            }, 500);
+        }
+    </script>
+</body>
+</html>
